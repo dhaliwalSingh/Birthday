@@ -17,7 +17,7 @@ export default function App() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-pink-100 to-purple-200 flex flex-col items-center justify-center p-6 text-center font-sans">
             <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
-            <audio autoPlay loop>
+            <audio autoPlay loop muted onCanPlay={(e) => e.target.muted = false}>
                 <source src="happy-birthday-314197.mp3" type="audio/mpeg" />
             </audio>
 
